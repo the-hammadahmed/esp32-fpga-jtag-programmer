@@ -126,7 +126,7 @@ GPIO 27 ────────────────► TDI(3)
 
 GPIO 26 ◄──────────────── TDO(4)
 
-GND     ───────────────── GND(6)
+GND     ───────────────── GND(5)
 
 pin no 6 that is 3.3v pin on fpga jtag pins is not used
 ```
