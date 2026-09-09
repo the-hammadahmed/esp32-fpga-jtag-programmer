@@ -3,11 +3,11 @@
  *
  * ESP32 Pin Connections:
  *
- * GPIO 13 -> FPGA TCK
- * GPIO 26 -> FPGA TDI
- * GPIO 27 <- FPGA TDO
- * GPIO 25 -> FPGA TMS
- * GND     <-> FPGA GND
+ * GPIO 25 -> FPGA TMS (1)
+ * GPIO 26 -> FPGA TDI (2)
+ * GPIO 27 <- FPGA TDO (3)
+ * GPIO 13 -> FPGA TCK (4)
+ * GND     <-> FPGA GND (5)
  *
  * Serial Protocol:
  *
@@ -30,8 +30,8 @@
 
 
 #define PIN_TCK 13
-#define PIN_TDI 26
 #define PIN_TDO 27
+#define PIN_TDI 26
 #define PIN_TMS 25
 
 
