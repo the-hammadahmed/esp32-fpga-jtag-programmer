@@ -101,10 +101,10 @@ Connect the ESP32 directly to the FPGA JTAG pins.
 
 | ESP32 GPIO | JTAG Signal | FPGA |
 | ---------- | ----------- | ---- |
-| GPIO 13    | TCK         | TCK  |
-| GPIO 27    | TDI         | TDI  |
-| GPIO 26    | TDO         | TDO  |
 | GPIO 25    | TMS         | TMS  |
+| GPIO 26    | TDI         | TDI  |
+| GPIO 27    | TDO         | TDO  |
+| GPIO 13    | TCK         | TCK  |
 | GND        | GND         | GND  |
 
 ## Connection Image
@@ -118,13 +118,13 @@ The connection direction is:
 ```text
 ESP32                      FPGA
 
-GPIO 13 ────────────────► TCK(1)
+GPIO 25 ────────────────► TMS(1)
 
-GPIO 25 ────────────────► TMS(2)
+GPIO 26 ────────────────► TDI(2)
 
-GPIO 27 ────────────────► TDI(3)
+GPIO 27 ────────────────► TDO(3)
 
-GPIO 26 ◄──────────────── TDO(4)
+GPIO 13 ◄──────────────── TCK(4)
 
 GND     ───────────────── GND(5)
 
