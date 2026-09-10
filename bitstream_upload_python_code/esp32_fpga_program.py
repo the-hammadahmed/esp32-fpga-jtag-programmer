@@ -11,8 +11,8 @@ import os
 
 #PORT = "/dev/ttyUSB3"
 
-BAUD = 921600
-#BAUD = 2000000
+# BAUD = 921600
+BAUD = 500000
 
 #BITSTREAM_FILE = ("build/arty_35/counter_slave.bit")
 
