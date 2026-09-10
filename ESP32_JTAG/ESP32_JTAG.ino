@@ -21,7 +21,7 @@
  * ACK = 0xAA
  */
 
-#define SERIAL_BAUD 921600
+#define SERIAL_BAUD 500000
 #define RX_BUFFER_SIZE 32768
 
 
